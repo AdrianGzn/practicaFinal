@@ -8,7 +8,7 @@ export const routes: Routes = [
         component: LoginComponent
     },
     {
-        path: './Home',
+        path: 'home-pokemon',
         component: HomeComponent
     }
 ];

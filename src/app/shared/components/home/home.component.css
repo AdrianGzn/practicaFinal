@@ -5,3 +5,8 @@
     height: 70vh;
     border: 1px solid red; 
 }
+
+#card-pokemon {
+    width: 25%;
+    height: 20%;
+}

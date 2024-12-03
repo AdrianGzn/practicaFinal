@@ -1,0 +1,12 @@
+#header-pokemon {
+    height: 10%;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-pokemon img {
+    width: 150px;
+    height: 100px;
+}
