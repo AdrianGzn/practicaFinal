@@ -33,7 +33,7 @@ export class LoginComponent {
           pokemon_id: 0
         }
         localStorage.setItem("user", JSON.stringify(newUser));
-        this.router.navigate(['/Home']);
+        this.router.navigate(['/home-pokemon']);
       } else {
         alert('Llene el formulario correctamente.')
       }

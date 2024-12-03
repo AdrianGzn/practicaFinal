@@ -1,10 +1,11 @@
 #container {
+    font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2c4059;
+    background-color: rgb(239, 239, 239);
 }
 
 .auth-container {
@@ -12,7 +13,7 @@
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    background-color: #26374b;
+    background-color: white;
     border-radius: 8px;
     max-width: 400px;
     width: 100%;
@@ -22,60 +23,44 @@
 .auth-container h2 {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
-    color: #ffffff;
+    color: black;
 }
 
 .form {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.input{
+    width: 90%;
 }
 
 .form-child-label {
     font-weight: bold;
-    color: #ffffff;
+    color: black;
     margin-bottom: 0.5rem;
 }
 
 .form-control {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #4f7a9b;
+    width: 98%;
+    height: 24px;
+    border: 3px solid rgb(0, 159, 203);
     border-radius: 5px;
-    font-size: 1rem;
-    background-color: #203040;
-    color: #ffffff;
-    transition: border-color 0.3s;
-}
-
-.form-control:focus {
-    border-color: #2c4059;
-    outline: none;
-}
-
-.error-message {
-    color: #d9534f;
-    font-size: 0.875rem;
-    padding: 0.5rem 0;
+    background-color: white;
+    color: black;
 }
 
 .form-child {
-    padding: 0.75rem;
+    width: 90%;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
-    cursor: pointer;
-    background-color: #4f7a9b;
+    background-color: #18b7d7;
     color: #ffffff;
-    transition: background-color 0.3s;
-    margin-top: 0.5rem;
-}
-
-.form-child:first-of-type {
-    background-color: #2c4059;
-}
-
-.form-child:hover {
-    background-color: #203040;
+    margin-top: 5px;
+    border: 3px solid rgb(0, 159, 203);
 }
