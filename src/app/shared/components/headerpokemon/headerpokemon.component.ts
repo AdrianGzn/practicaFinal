@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-headerpokemon',
@@ -8,5 +9,12 @@ import { Component } from '@angular/core';
   styleUrl: './headerpokemon.component.css'
 })
 export class HeaderpokemonComponent {
+  constructor(private router: Router) {}
+
+  onLogOut(): void {
+    localStorage.removeItem("user");
+    alert('Cierre de sesión exitoso')
+    this.router.navigate(['']);
+  }
 
 }
