@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PokeApiService } from '../../services/poke-api.service';
 
 @Component({
   selector: 'app-home',
@@ -9,4 +10,18 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  constructor(private pokemonService: PokeApiService) {}
+
+
+  getPokemons(): void  {
+    this.pokemonService.getPokemons().subscribe({
+      next: (pokemons) => {
+        console.log(pokemons)
+      },
+
+      error: (error) => {
+        console.log(error)
+      }
+    })
+  }
 }
