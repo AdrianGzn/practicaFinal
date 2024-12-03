@@ -1,7 +1,6 @@
-<app-headerpokemon/>
+<app-headerpokemon />
 <div id="section-home">
-    <div>
-        <input (click)="searchPokemon()">
+    <div id="cards">
+        <app-card-pokemon *ngFor="let poke of pokemon" [pokemon]="poke" class="card-pokemon" />
     </div>
-    <app-card-pokemon class="card-pokemon"/>
 </div>
